@@ -1,21 +1,36 @@
-const {
-  default: makeWASocket,
-  useMultiFileAuthState,
-  DisconnectReason
-} = require("@whiskeysockets/baileys")
-
+const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require("@whiskeysockets/baileys")
 const P = require("pino")
+const readline = require("readline")
 require("./settings")
+
+// input for phone number
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
 
 async function startBot() {
   const { state, saveCreds } = await useMultiFileAuthState("./session")
 
   const sock = makeWASocket({
     logger: P({ level: "silent" }),
-    auth: state
+    auth: state,
+    printQRInTerminal: false // disable QR
   })
 
   sock.ev.on("creds.update", saveCreds)
+
+  // ✅ PAIRING CODE SECTION
+  if (!sock.authState.creds.registered) {
+    rl.question("📱 Enter your WhatsApp number (e.g. 2547XXXXXXXX): ", async (number) => {
+      try {
+        const code = await sock.requestPairingCode(number)
+        console.log(`\n🔑 Your Pairing Code: ${code}\n`)
+      } catch (err) {
+        console.log("❌ Failed to generate pairing code:", err)
+      }
+    })
+  }
 
   sock.ev.on("messages.upsert", async ({ messages }) => {
     const m = messages[0]
