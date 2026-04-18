@@ -8,7 +8,7 @@
 //----------------------[ NOVA-XMD ]----------------------//
 
 const fs = require('fs')
-const { color } = require('./Nova-color')
+const { color } = require('./Nova/color')
 
 if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname + '/.env' })
 
