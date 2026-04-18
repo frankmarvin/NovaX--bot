@@ -1,0 +1,78 @@
+{
+  "name": "novax-bot",
+  "version": "2.4.5",
+  "description": "NovaX-Bot, an advanced WhatsApp automation bot",
+  "logo": "https://i.imgur.com/1DkLGVk.jpeg",
+  "keywords": ["whatsapp", "bot", "md", "novax"],
+  "repository": "https://github.com/frankmarvin/NovaX-Bot",
+  "stack": "container",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "env": {
+    "SESSION_ID": {
+      "description": "Enter your NovaX session id here; must start with NOVAX~",
+      "value": "",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "Enter your bot name here",
+      "value": "NovaX-Bot",
+      "required": false
+    },
+    "OWNER_NUMBER": {
+      "description": "Enter your number starting with country code (e.g. 254xxxxxxxx)",
+      "value": "",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Enter your name here",
+      "value": "frankmarvin",
+      "required": true
+    },
+    "STICKER_PACK_NAME": {
+      "description": "Sticker pack name",
+      "value": "NovaX",
+      "required": false
+    },
+    "STICKER_AUTHOR_NAME": {
+      "description": "Sticker author name",
+      "value": "frankmarvin",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku API key (optional for auto-deploy)",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku app name",
+      "value": "",
+      "required": false
+    },
+    "TIMEZONE": {
+      "description": "Timezone (e.g. Africa/Nairobi)",
+      "value": "Africa/Nairobi",
+      "required": false
+    },
+    "GITHUB_TOKEN": {
+      "description": "GitHub token with repo access for bot settings storage",
+      "value": "",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
