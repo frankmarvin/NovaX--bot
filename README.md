@@ -77,6 +77,17 @@ cd novax-bot
 npm install
 ```
 
+---
+
+## 🔑 Get Session ID (WhatsApp Pair Code Login)
+
+Generate your session ID using the pairing websites below:
+
+[![FIRST PAIR CODE WEB](https://img.shields.io/badge/FIRST%20PAIR%20CODE%20WEB-yellow?style=for-the-badge)](https://your-first-link.com)
+
+[![SECOND PAIR CODE WEB](https://img.shields.io/badge/SECOND%20PAIR%20CODE%20WEB-yellow?style=for-the-badge)](https://your-second-link.com)
+
+> ⚠️ Use international number format (e.g. 2547XXXXXXXX)
 
 ---
 
