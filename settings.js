@@ -1,6 +1,6 @@
 //-------------------[ BOT SETTINGS ]------------------//
 
-// @project_name : NOVA-XMD
+// @project_name : NOVAX-XMD
 // @author : FrankMarv
 // @github : frankmarvin
 // @whatsapp : +254748642275
@@ -8,7 +8,7 @@
 //----------------------[ NOVA-XMD ]----------------------//
 
 const fs = require('fs')
-const { color } = require('./Nova/color')
+const { color } = require('./NovaX/color')
 
 if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname + '/.env' })
 
@@ -19,7 +19,7 @@ global.SESSION_ID = process.env.SESSION_ID || ''
 
 //--------------------[ BOT NAME ]----------------------//
 
-global.botname = process.env.BOT_NAME || 'NOVA-XMD'
+global.botname = process.env.BOT_NAME || 'NOVA-XXMD'
 
 //-----------------[ OWNER NUMBER ]------------------//
 
@@ -37,7 +37,7 @@ global.ownername = process.env.OWNER_NAME || 'FrankMarv'
 
 //------------[ STICKER PACKNAME ]-----------------//
 
-global.packname = process.env.STICKER_PACK_NAME || "NOVA-XMD"
+global.packname = process.env.STICKER_PACK_NAME || "NOVAX-XMD"
 
 //--------------[ TIMEZONE ]------------//
 
@@ -57,13 +57,13 @@ global.plink = process.env.PLINK || "https://github.com/frankmarvin"
 
 //------------------[ WATERMARK ]--------------------//
 
-global.wm = process.env.GL_WM || "© NOVA-XMD"
+global.wm = process.env.GL_WM || "© NOVAX-XMD"
 
 //---------------------[ REPLIES ]-----------------------//
 
 global.mess = {
   done: '*Done*',
-  success: '© NOVA-XMD',
+  success: '© NOVAX-XMD',
   owner: `*You don't have permission to use this command!*`,
   group: '*This feature is only available in groups!*',
   admin: '*You need admin rights to use this feature!*',
@@ -80,4 +80,4 @@ fs.watchFile(file, () => {
   require(file)
 })
 
-//----------------------[ NOVA-XMD ]----------------------//
+//----------------------[ NOVAX-XMD ]----------------------//
