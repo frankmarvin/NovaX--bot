@@ -8,12 +8,19 @@ NovaX is fast, customizable, and designed as a clean foundation for building adv
 
 
 🏷️ Badge
+
 https://img.shields.io/badge/Node.js-18+-green?style=for-the-badge&logo=node.js
+
 https://img.shields.io/badge/Baileys-WhatsApp%20API-blue?style=for-the-badge
+
 https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge
+
 https://img.shields.io/badge/Platform-WhatsApp-success?style=for-the-badge
+
 https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge
+
 https://img.shields.io/badge/PRs-Welcome-orange?style=for-the-badge
+
 https://img.shields.io/badge/Maintained-Yes-blue?style=for-the-badge
 
 
@@ -49,9 +56,13 @@ NovaX/
 
 
 ## ⚙️ Installation
+
 git clone https://github.com/frankmarvin/novax-bot.git
+
 cd novax-bot
+
 npm install
+
 Edit settings.js:
 global.botname = "NovaX"
 global.owner = ["254748642275"]
@@ -62,6 +73,7 @@ global.prefix = "."
 
 
 ## ▶️ Run Locally
+
 npm start
 
 
@@ -80,6 +92,7 @@ npm start
 # 🐳 Docker
 
 docker build -t novax-bot .
+
 docker run novax-bot
 
 # ⚡ Railway (Recommended)
@@ -97,24 +110,34 @@ docker run novax-bot
 - New → Web Service
 - Connect GitHub repo
 - Set:
+- 
 Build Command: npm install
+
 Start Command: npm start
 - Deploy
 
 # 🧱 VPS (Ubuntu / Linux Server)
+
 sudo apt update
+
 sudo apt install nodejs npm -y
 
-git clone https://github.com/yourname/novax-bot.git
+git clone https://github.com/frankmarvin/novax-bot.git
+
 cd novax-bot
+
 npm install
 
 npm start
 
 # 🔄 Keep Bot Running (PM2)
+
 npm install -g pm2
+
 pm2 start index.js --name novax
+
 pm2 save
+
 pm2 startup
 
 # 🟢 Replit (Quick Testing)
@@ -122,17 +145,23 @@ pm2 startup
 - Create Node.js Repl
 - Upload files
 - Run:
+- 
 npm install
+
 npm start
 
 # 🧊 Termux (Android)
 
 pkg update && pkg upgrade
+
 pkg install nodejs git
 
-git clone https://github.com/yourname/novax-bot.git
+git clone https://github.com/frankmarvin/novax-bot.git
+
 cd novax-bot
+
 npm install
+
 npm start
 
 
@@ -150,6 +179,7 @@ npm start
 
 
 ## 🤖 Commands
+
 - .menu
 - .ping
 - .alive
