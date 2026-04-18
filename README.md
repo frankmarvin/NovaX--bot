@@ -7,22 +7,22 @@ NovaX is fast, customizable, and designed as a clean foundation for building adv
 ---
 
 
-🏷️ Badge
+##🏷️ Badge
 
-https://img.shields.io/badge/Node.js-18+-green?style=for-the-badge&logo=node.js
+## 🤖 Bot Status & Tech Stack
 
-https://img.shields.io/badge/Baileys-WhatsApp%20API-blue?style=for-the-badge
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green?style=for-the-badge&logo=node.js)](https://nodejs.org/)
+[![Baileys](https://img.shields.io/badge/Baileys-WhatsApp%20API-blue?style=for-the-badge)](https://github.com/adiwajshing/Baileys)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge
+---
 
-https://img.shields.io/badge/Platform-WhatsApp-success?style=for-the-badge
+## 📊 Project Status
 
-https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge
-
-https://img.shields.io/badge/PRs-Welcome-orange?style=for-the-badge
-
-https://img.shields.io/badge/Maintained-Yes-blue?style=for-the-badge
-
+[![Platform](https://img.shields.io/badge/Platform-WhatsApp-success?style=for-the-badge)](https://www.whatsapp.com/)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)]()
+[![PRs](https://img.shields.io/badge/PRs-Welcome-orange?style=for-the-badge)](../../pulls)
+[![Maintained](https://img.shields.io/badge/Maintained-Yes-blue?style=for-the-badge)]()
 
 ---
 
@@ -57,16 +57,13 @@ NovaX/
 
 ## ⚙️ Installation
 
-git clone https://github.com/frankmarvin/novax-bot.git
-
-cd novax-bot
-
-npm install
-
-Edit settings.js:
-global.botname = "NovaX"
-global.owner = ["254748642275"]
-global.prefix = "."
+- git clone https://github.com/frankmarvin/novax-bot.git
+- cd novax-bot
+- npm install
+- Edit settings.js:
+ - global.botname = "NovaX"
+ - global.owner = ["254748642275"]
+ - global.prefix = "."
 
 
 ---
@@ -82,89 +79,20 @@ npm start
 
 ## ☁️ Deployment Options
 
-# 🚀 Heroku
 
-+ Ensure heroku.yml exists
-- Push repo to GitHub
-- Connect to Heroku
-- Deploy using container stack
-
-# 🐳 Docker
-
-docker build -t novax-bot .
-
-docker run novax-bot
-
-# ⚡ Railway (Recommended)
-
-- Go to Railway
-- Create new project
-- Connect GitHub repo
-- Railway auto-detects Node.js
-- Add environment variables if needed
-- Deploy
-
-# 🌐 Render
-
-- Go to Render
-- New → Web Service
-- Connect GitHub repo
-- Set:
-- 
-Build Command: npm install
-
-Start Command: npm start
-- Deploy
-
-# 🧱 VPS (Ubuntu / Linux Server)
-
-sudo apt update
-
-sudo apt install nodejs npm -y
-
-git clone https://github.com/frankmarvin/novax-bot.git
-
-cd novax-bot
-
-npm install
-
-npm start
-
-# 🔄 Keep Bot Running (PM2)
-
-npm install -g pm2
-
-pm2 start index.js --name novax
-
-pm2 save
-
-pm2 startup
-
-# 🟢 Replit (Quick Testing)
-
-- Create Node.js Repl
-- Upload files
-- Run:
-- 
-npm install
-
-npm start
-
-# 🧊 Termux (Android)
-
-pkg update && pkg upgrade
-
-pkg install nodejs git
-
-git clone https://github.com/frankmarvin/novax-bot.git
-
-cd novax-bot
-
-npm install
-
-npm start
+[![Heroku](https://img.shields.io/badge/Heroku-Deploy-purple?style=for-the-badge&logo=heroku)](https://www.heroku.com/)
+[![Railway](https://img.shields.io/badge/Railway-Deploy-black?style=for-the-badge&logo=railway)](https://railway.app/)
+[![Render](https://img.shields.io/badge/Render-Deploy-blue?style=for-the-badge&logo=render)](https://render.com/)
+[![Replit](https://img.shields.io/badge/Replit-Run-orange?style=for-the-badge&logo=replit)](https://replit.com/)
+[![Docker](https://img.shields.io/badge/Docker-Containerize-blue?style=for-the-badge&logo=docker)](https://www.docker.com/)
+[![Termux](https://img.shields.io/badge/Termux-Mobile-black?style=for-the-badge&logo=android)](https://f-droid.org/packages/com.termux/)
 
 
+# ⚡ VPS (Best Practice)
+
+- ☁️ **VPS Deployment**
+  - Ubuntu / Debian Server
+  - SSH + PM2 recommended
 ---
 
 
@@ -190,12 +118,12 @@ npm start
 
 ## 🛠️ Customization
 
-Easily extend with:
-- Admin systems
-- AI integrations
-- Anti-delete
-- Games
-- Database
+- Easily extend with:
+ - Admin systems
+ - AI integrations
+ - Anti-delete
+ - Games
+ - Database
 
 
 ---
