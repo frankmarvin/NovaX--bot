@@ -56,27 +56,6 @@ NovaX/
 ---
 
 
-## ⚙️ Installation
-
-- 📥 [Clone Repository](https://github.com/frankmarvin/novax-bot.git)
-- 📂 Open Folder
-
-```bash
-git clone https://github.com/frankmarvin/novax-bot.git
-cd novax-bot
-npm install
-
----
-
-- 🛠️ Edit settings.js
-global.botname = "NovaX"
-global.owner = ["254748642275"]
-global.prefix = "."
-
-
----
-
-
 ## ▶️ Run Locally
 
 npm start
@@ -145,3 +124,28 @@ NovaX is deployment-ready across multiple platforms.
 Run it locally, host it in the cloud, or scale it on a VPS.
 
 Built with ⚡ using Baileys
+
+
+---
+
+
+
+
+## ⚙️ Installation
+
+- 🛠️ **Edit settings.js**
+ - global.botname = "NovaX"
+ - global.owner = ["254748642275"]
+ - global.prefix = "."
+
+
+
+- 📥 [Clone Repository](https://github.com/frankmarvin/novax-bot.git)
+- 📂 Open Folder
+
+```bash
+git clone https://github.com/frankmarvin/novax-bot.git
+cd novax-bot
+npm install
+
+
