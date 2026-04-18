@@ -60,10 +60,12 @@ NovaX/
 ## ⚙️ Installation
 
 - 🛠️ **Edit settings.js**
- - global.botname = "NovaX"
- - global.owner = ["254748642275"]
- - global.prefix = "."
 
+```bash
+global.botname = "NovaX"
+global.owner = ["254748642275"]
+global.prefix = "."
+```
 
 
 - 📥 [Clone Repository](https://github.com/frankmarvin/novax-bot.git)
@@ -119,10 +121,12 @@ npm start
 
 ## 🤖 Commands
 
-- .menu
-- .ping
-- .alive
 
+```bash
+.menu
+.ping
+.alive
+```
 
 ---
 
