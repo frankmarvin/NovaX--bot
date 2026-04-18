@@ -43,6 +43,7 @@ NovaX is fast, customizable, and designed as a clean foundation for building adv
 
 ## 📦 Project Structure
 
+```bash
 NovaX/
 ├── index.js
 ├── settings.js
@@ -51,7 +52,7 @@ NovaX/
 ├── heroku.yml
 ├── Dockerfile
 └── Images/
-
+```
 
 ---
 
