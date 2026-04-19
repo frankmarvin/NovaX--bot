@@ -36,7 +36,7 @@ Generate your session ID using the pairing websites below:
 
 [![SECOND PAIR CODE WEB](https://img.shields.io/badge/SECOND%20PAIR%20CODE%20WEB-yellow?style=for-the-badge)](https://your-second-link.com)
 
-> ⚠️ Use international number format (e.g. 2547XXXXXXXX)
+> ⚠️ Use international number format 
 
 
 ---
